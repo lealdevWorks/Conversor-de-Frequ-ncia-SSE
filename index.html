@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Frequência SSE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    
+    <!--
+     * Nome da Ferramenta: Conversor de Frequência SSE
+     * Versão: Versão 1.0
+     * Criador: Rafael da Rocha Leal
+     * CPF: 033.114.580-44
+     * Cargo: Técnico de Cronotacógrafo
+     *
+     * <p>Objetivos da Ferramenta:</p>
+     * <ul>
+     *   <li><b>Conversão de Frequência em Velocidade:</b>
+     *       Facilitar a conversão de valores de frequência em Hertz (Hz) 
+     *       para velocidades correspondentes em quilômetros por hora (km/h) 
+     *       utilizando dados padrões do equipamento SSE.</li>
+     *   <li><b>Aprimoramento da Medição:</b>
+     *       Proporcionar uma ferramenta útil para técnicos e profissionais 
+     *       da área que necessitam entender a relação entre pulsos e 
+     *       velocidade em diferentes contextos, como medições de 
+     *       velocidade de veículos.</li>
+     *   <li><b>Acessibilidade:</b>
+     *       Oferecer uma interface intuitiva e de fácil utilização, 
+     *       permitindo que usuários de diferentes níveis de habilidade 
+     *       técnica possam utilizar a ferramenta sem complicações.</li>
+     *   <li><b>Precisão nas Conversões:</b>
+     *       Garantir que as conversões realizadas sejam precisas e baseadas 
+     *       em fórmulas matemáticas confiáveis, proporcionando resultados 
+     *       exatos para os usuários.</li>
+     *   <li><b>Educação e Treinamento:</b>
+     *       Servir como uma ferramenta educativa para profissionais e 
+     *       estudantes que desejam aprender sobre a relação entre 
+     *       frequência e velocidade, promovendo a compreensão dos princípios 
+     *       envolvidos na medição e conversão.</li>
+     * </ul>
+     *
+     * <p>Conclusão:</p>
+     * Com esses objetivos, o Conversor de Frequência SSE se estabelece 
+     * como uma ferramenta essencial para profissionais da área, 
+     * contribuindo para a precisão nas medições e facilitando a 
+     * interpretação dos dados de frequência em aplicações práticas.
+     -->
+</head>
+<body>
+    <section>
+        <header>
+            <img id="inicio" src="Inicio.png" alt="foto do logo">
+        </header>
+        <div id="dados">
+            <p>Frequência (Hz):
+                <input type="number" id="frequencia" oninput="handleInputChange(this)" placeholder="Ex: 33">
+            </p>
+            <p>
+                <input type="button" value="Calcular Velocidade" onclick="calcular()">
+                <input type="button" value="Limpar" onclick="limpar()">
+            </p>
+        </div>
+        <div id="res">
+            <p>Resultado: <span id="resultado">Preparando o Resultado...</span></p>
+        </div>
+        <footer>
+            <p>&copy; Rafael Leal</p>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
